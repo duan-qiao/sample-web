@@ -1,0 +1,65 @@
+###
+GET http://localhost:8080/user/1
+
+{
+
+}
+
+###
+GET http://localhost:8080/user/users
+
+{
+
+}
+
+###
+POST http://localhost:8080/user/query
+Content-Type: application/json
+
+{
+  "telephone": "13300001111",
+  "nickName": "张三",
+  "age": 18,
+  "email": "zhang.san@163.com",
+  "startTime": "2022-05-11T22:45:31.785",
+  "endTime": "2022-05-13T22:45:31.785"
+}
+
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": 9,
+  "account": "zhang.sanfeng",
+  "nickName": "张三丰",
+  "age": 21,
+  "telephone": "13300001111",
+  "email": "zhang.sanfeng@163.com",
+  "status": 1,
+  "createTime": "2022-05-11T22:45:31.785",
+  "updateTime": "2022-05-11T22:45:31.785"
+}
+
+###
+PUT http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "account": "zhang.san",
+  "nickName": "张三三",
+  "age": 21,
+  "telephone": "13300001111",
+  "email": "zhang.san@163.com",
+  "status": 1,
+  "createTime": "2022-05-11T22:45:31.785",
+  "updateTime": "2022-05-11T22:45:31.785"
+}
+
+###
+DELETE http://localhost:8080/user/9
+
+{
+
+}
